@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+</head>
+
+<body>2
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <h2 style="background: rgb(59, 207, 67, 0.4); justify-content: center;">Reverse The String</h2>
+    <div style="text-align: center;">
+        <input style=" background-color: rgb(48, 235, 48, 0.6); height: 50px; font-size: large;
+    display: flex; text-transform: capitalize;" type="text" id="input" name="Enter Text" onkeyup="show()">
+        <input style="background-color: rgb(45, 233, 45, 0.6); height: 50px; font-size: large;
+    ;" type="text" id="Reverse" name="Reverse Text">
+    </div>
+    <div class="cube" style="justify-content: background;">
+        <div class="top"></div>
+        <div>`
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+    </div>
+    <script>
+        function show() {
+            var storetext = document.getElementById("input").value;
+
+
+            var empty = "";
+            for (var i = storetext.length - 1; i >= 0; i--) {
+                empty += storetext[i];
+
+            }
+            document.getElementById("Reverse").value = empty;
+        }
+    </script>
+
+
+</body>
+
+</html>
